@@ -4,8 +4,8 @@ import csv
 def profitloss_function():
     """
     - Function calculates either net profit deficit or highest net profit surplus
-    - No parameters required
-
+    - No parameters 
+    
     """
 
     # creates the file path to the "Profit_and_Loiss.csv" file located in the "csv_reports" 

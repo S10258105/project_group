@@ -4,7 +4,7 @@ import csv
 def coh_function():
     """
     - Function calculates either cash deficit or highest cash surplus
-    - No parameters required
+    - No parameters
 
     """
     

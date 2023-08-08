@@ -4,7 +4,7 @@ import cash_on_hand, profit_loss, overheads
 def main():
     """
     - Function executes all 3 functions in the three modules
-    - No parameters required
+    - No parameters 
 
     """
 
