@@ -1,19 +1,27 @@
-from pathlib import Path
-
-file_path = Path(r"C:\project_group\summary_report.txt")
-file_path.touch()
-
+# imports the three modules named cash_on_hand, profit_loss, and overheads
 import cash_on_hand, profit_loss, overheads
 
-with file_path.open(mode="w", encoding="UTF-8") as file:
+def main():
+    """
+    - Function executes all 3 functions in the three modules
+    - No parameters required
 
-    overheads_output = overheads.overheads_function()
-    cash_output = cash_on_hand.cash_function()
-    profit_output = profit_loss.profit_function()
-    
-    file.write(overheads_output)
-    file.write(cash_output)
-    file.write(profit_output)
+    """
 
+    # calls the overhead_function() from the overheads module
+    # Execute the function to calculate and write the highest overhead to a summary report.
+    overheads.overhead_function()
+
+    # calls the coh_function() from the cash_on_hand module
+    # Execute the function to calculate and write the cash deficits or highest surplus to summary report
+    cash_on_hand.coh_function()
+
+    # calls the profitloss_function() from the profit_loss module
+    # Execute the function to calculate and write the net profit deficits or highest surplus to summary report
+    profit_loss.profitloss_function()
+
+# initiates the execution of the tasks specified in the overhead_function, 
+# coh_function, and profitloss_function
+main()
 
 
